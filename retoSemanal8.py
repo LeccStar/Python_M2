@@ -24,7 +24,7 @@ if option != "I" and option != "i" and option != "A" and option != "a":
     exit()
 
 color = input("Ingresa uno de los colores del arcoiris en español: ")
-color.lower()
+color = color.lower()
 newColor = color.split()
 
 for color in newColor:
