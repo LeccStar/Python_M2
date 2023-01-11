@@ -2,7 +2,7 @@ lista = []
 cantidad_alumnos = int(input("Ingrese la cantidad de alumnos: "))
 while len(lista) < cantidad_alumnos:
     opcion = input("Agregar alumno (Y) o terminar (N): ")
-    if opcion == "Y" or "y":
+    if opcion == "Y" or opcion == "y":
         try:
             nombre = input("Ingrese el nombre del alumno: ").capitalize()
             calificaciones = []
@@ -27,7 +27,7 @@ while len(lista) < cantidad_alumnos:
             }
         lista.append(alumno)
         print("Alumno agregado")
-    elif opcion == "N" or "n":
+    elif opcion == "N" or opcion == "n":
         print(f"El programa ha terminado con {len(lista)} alumnos")
         break
     else: 
